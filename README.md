@@ -14,6 +14,7 @@ D-pad up/down: Browse startpoints.<br>
 A-button: Go to currently selected map and startpoint.<br>
 X-button: Select current map and startpoint.<br>
 B-button: Enable/disable scanmode. When enabled, use the Z-button on controller 1 to toggle it on and off.<br>
+Z-button: Clear all trigger data for the level (reset most of the level, essentially). Reload to make it take effect.<br>
 Start-button: Reload to latest checkpoint.<br>
 L-trigger/R-trigger: Browse characters (reload checkpoint to actually spawn as them).
 
