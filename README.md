@@ -3,7 +3,7 @@ Patch to Spyro: A Hero's Tail to add a map browser to the game (GameCube, NTSC).
 
 Made using Composer's [code injection utility](https://github.com/C0mposer/C-Game-Modding-Utility).
 
-Project can be loaded up in the tool manually, or applied with the pre-made [xdelta](https://www.romhacking.net/utilities/598/) patch to the GameCube NTSC ISO can be downloaded from the "releases" section.
+Project can be loaded up in the tool manually, and the pre-made [xdelta](https://www.romhacking.net/utilities/598/) patch to the GameCube NTSC ISO can be downloaded from the "releases" section.
 
 # How to use
 Controls for the browser menu are mapped to controller port 2. You can assign hotkeys to them as you wish. Here are the controls:
