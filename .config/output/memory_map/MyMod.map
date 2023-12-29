@@ -1,0 +1,169 @@
+
+Discarded input sections
+
+ .comment       0x0000000000000000       0x24 main.o
+ .eh_frame      0x0000000000000000      0x1c0 main.o
+ .gnu.attributes
+                0x0000000000000000       0x10 main.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+MainCodecave     0x00000000803d8fb0 0x0000000000002010
+AutoHook         0x0000000080222244 0x0000000000100000
+ScanHook         0x000000008005c954 0x0000000000100000
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD main.o
+LOAD main_hook.o
+LOAD scan_hook.o
+LOAD c:/users/ebbers/documents/gc_codeinject/c c++ game modding utility/prereq/devkitppc/bin/../lib/gcc/powerpc-eabi/12.1.0\libgcc.a
+START GROUP
+LOAD c:/users/ebbers/documents/gc_codeinject/c c++ game modding utility/prereq/devkitppc/bin/../lib/gcc/powerpc-eabi/12.1.0/../../../../powerpc-eabi/lib\libsysbase.a
+LOAD c:/users/ebbers/documents/gc_codeinject/c c++ game modding utility/prereq/devkitppc/bin/../lib/gcc/powerpc-eabi/12.1.0/../../../../powerpc-eabi/lib\libc.a
+END GROUP
+LOAD c:/users/ebbers/documents/gc_codeinject/c c++ game modding utility/prereq/devkitppc/bin/../lib/gcc/powerpc-eabi/12.1.0\libgcc.a
+LOAD ../../../.config/symbols/symbols.txt
+                0x0000000080001234                game_symbol = 0x80001234
+                0x0000000080232df0                GetSpyroMap = 0x80232df0
+                0x0000000080165628                SpinGem = 0x80165628
+                0x000000008012f72c                DrawText = 0x8012f72c
+                0x0000000012345678                gems = 0x12345678
+LOAD ../../../.config/symbols/function_symbols.txt
+                0x0000000080005678                GameFunction = 0x80005678
+LOAD ../../../.config/symbols/auto_symbols.txt
+                0x000000008066aad0                current_buttons = 0x8066aad0
+                0x000000008066aad4                current_buttonsP2 = 0x8066aad4
+                0x00000000804cb35c                gpPlayer = 0x804cb35c
+                0x00000000804cb360                gpPlayerItem = 0x804cb360
+                0x00000000803592a8                InGamePrintf = 0x803592a8
+                0x0000000080259af8                InGameSPrintf = 0x80259af8
+                0x000000008005b63c                Player_ForceModeChange = 0x8005b63c
+                0x00000000800e1b6c                gCreatePickup = 0x800e1b6c
+                0x000000008015500c                gCreateLightGem = 0x8015500c
+                0x000000008046f374                gGameLoop_m_pPanel = 0x8046f374
+                0x00000000804cb3cc                gpGameWnd = 0x804cb3cc
+                0x00000000804cb3d0                gpPanelWnd = 0x804cb3d0
+                0x00000000804cb3d4                gpPanelXWnd = 0x804cb3d4
+                0x0000000080222d58                GUI_GameText_Print = 0x80222d58
+                0x0000000080302710                BaseWnd_DebugPrint = 0x80302710
+                0x000000008012f72c                XWnd_TextPrint = 0x8012f72c
+                0x000000008012f8dc                XWnd_SetText = 0x8012f8dc
+                0x00000000801a5e14                CreateGUI_Item = 0x801a5e14
+                0x00000000801a9ee8                GUI_Item_DrawText = 0x801a9ee8
+                0x000000008046f2f0                gGameLoop = 0x8046f2f0
+                0x0000000080465b60                gPlayerState = 0x80465b60
+                0x000000008023e644                GoToMap = 0x8023e644
+                0x00000000800687ec                RestartGame = 0x800687ec
+                0x0000000080232df0                GetSpyroMap = 0x80232df0
+                0x000000008023282c                Map_LevelName = 0x8023282c
+                0x000000008023289c                Map_RealmName = 0x8023289c
+                0x0000000080232a0c                Map_ClearBitHeap = 0x80232a0c
+                0x000000008023251c                Map_SetLastStartPoint = 0x8023251c
+                0x0000000080231618                Map_AddPlayer = 0x80231618
+                0x000000008046ee54                gMapList = 0x8046ee54
+                0x0000000080455c1c                gGameText = 0x80455c1c
+                0x000000008012df2c                GetText = 0x8012df2c
+                0x0000000080469f6c                levelStats = 0x80469f6c
+                0x0000000080469f6c                startPoints = 0x80469f6c
+
+.eh_frame_hdr   0x0000000000000000        0x0
+ .eh_frame_hdr  0x0000000000000000        0x0 main.o
+
+.sdata2         0x00000000803d8fb0        0x0
+ .sdata2        0x00000000803d8fb0        0x0 main.o
+
+.AutoHook       0x0000000080222244        0x4
+ main_hook.o(.text)
+ .text          0x0000000080222244        0x4 main_hook.o
+ main_hook.o(.rodata)
+ main_hook.o(.rodata*)
+ main_hook.o(.data)
+ .data          0x0000000080222248        0x0 main_hook.o
+ main_hook.o(.bss)
+ .bss           0x0000000080222248        0x0 main_hook.o
+
+.ScanHook       0x000000008005c954        0x4
+ scan_hook.o(.text)
+ .text          0x000000008005c954        0x4 scan_hook.o
+ scan_hook.o(.rodata)
+ scan_hook.o(.rodata*)
+ scan_hook.o(.data)
+ .data          0x000000008005c958        0x0 scan_hook.o
+ scan_hook.o(.bss)
+ .bss           0x000000008005c958        0x0 scan_hook.o
+
+.MainCodecave   0x00000000803d8fb0      0xf2c
+ main.o(.text)
+ .text          0x00000000803d8fb0      0x958 main.o
+                0x00000000803d8fb0                getGenericStructLong
+                0x00000000803d8fb8                getGenericStructFloat
+                0x00000000803d8fc0                getGenericStructInt
+                0x00000000803d8fc8                P1_IsButtonsJustPressed
+                0x00000000803d9020                P1_IsButtonsHeldDown
+                0x00000000803d9038                P2_IsButtonsJustPressed
+                0x00000000803d9094                P2_IsButtonsHeldDown
+                0x00000000803d90ac                GetSpyroStartPoint
+                0x00000000803d90c4                MenuControls
+                0x00000000803d9348                drawGUIText
+                0x00000000803d9414                printMap
+                0x00000000803d9798                MainHook
+                0x00000000803d9888                ScanHook
+ main.o(.rodata)
+ main.o(.rodata*)
+ .rodata.str1.4
+                0x00000000803d9908      0x44f main.o
+                                        0x46b (size before relaxing)
+ main.o(.data)
+ *fill*         0x00000000803d9d57        0x1 
+ .data          0x00000000803d9d58      0x148 main.o
+                0x00000000803d9d58                mapInfoRect
+                0x00000000803d9d68                PLAYER_STRINGS
+                0x00000000803d9d8c                MAP_STRINGS
+                0x00000000803d9e90                somePlace
+ main.o(.bss)
+ .bss           0x00000000803d9ea0       0x18 main.o
+                0x00000000803d9ea8                zeroVec
+ main.o(.sdata)
+ .sdata         0x00000000803d9eb8       0x14 main.o
+                0x00000000803d9eb8                currPlayer
+                0x00000000803d9ebc                color_light_blue
+                0x00000000803d9ec0                color_light_green
+                0x00000000803d9ec4                color_light_red
+                0x00000000803d9ec8                color_white
+                0x00000000803e1eb8                _SDA_BASE_
+ .sdata         0x00000000803d9ecc        0x0 main.o
+ main.o(.sbss)
+ .sbss          0x00000000803d9ecc       0x10 main.o
+                0x00000000803d9ecc                currStartPoint
+                0x00000000803d9ed0                currMap
+                0x00000000803d9ed4                scanEnabled
+                0x00000000803d9ed5                hudEnabled
+                0x00000000803d9ed8                textGUI
+ main.o(.scommon)
+ main.o(.main.o.*)
+ *(.text)
+ *(.branch_lt)
+ .branch_lt     0x00000000803d9edc        0x0 main.o
+
+.glink          0x00000000803d9edc        0x0
+ .glink         0x00000000803d9edc        0x0 main.o
+
+.rela.dyn       0x00000000803d9edc        0x0
+ .rela.iplt     0x00000000803d9edc        0x0 main.o
+ .rela.text     0x00000000803d9edc        0x0 main.o
+
+.iplt           0x00000000803d9ee0        0x0
+ .iplt          0x00000000803d9ee0        0x0 main.o
+
+/DISCARD/
+ *(.comment)
+ *(.pdr)
+ *(.mdebug)
+ *(.reginfo)
+ *(.MIPS.abiflags)
+ *(.eh_frame)
+ *(.gnu.attributes)
+OUTPUT(../elf_files/MyMod.elf elf32-powerpc)
